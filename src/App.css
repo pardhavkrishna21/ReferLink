@@ -1834,3 +1834,123 @@ button {
 .verified-pill { border-radius: 4px; }
 .product-card:hover,
 .referrer-card:hover { transform: translateY(-2px); }
+
+/* Shared contrast and shape polish for the older card styles above. */
+.section-header h2,
+.category-card h3,
+.referral-main h3,
+.partner-detail h3,
+.verification-copy h2,
+.verification-form h3,
+.auth-header h3,
+.detail-features h4,
+.product-referral-heading h4,
+.selected-partner-detail h4,
+.connection-card h3 {
+  color: #253044;
+}
+
+.product-tag,
+.category-label,
+.category-providers span,
+.benefit,
+.partner-product,
+.partner-proof,
+.detail-text,
+.detail-provider,
+.detail-features ul,
+.selected-partner-detail ol,
+.selected-partner-item small,
+.verification-copy p,
+.upload-field,
+.request-field span,
+.referrer-meta,
+.profile-box p,
+.referrer-card p {
+  color: #536174;
+}
+
+.category-card,
+.referral-row,
+.detail-modal,
+.auth-modal,
+.selected-partner-detail,
+.partner-detail,
+.product-referral-options,
+.verification-section,
+.connection-card,
+.selected-process-box,
+.product-partner-option,
+.selected-partner-item,
+.detail-features,
+.otp-box {
+  border-radius: 16px;
+}
+
+.category-card,
+.referral-row,
+.detail-modal,
+.auth-modal,
+.partner-detail,
+.product-referral-options,
+.verification-form,
+.connection-card,
+.selected-process-box,
+.detail-features,
+.otp-box {
+  border-color: #d9ddd5;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(37, 48, 68, 0.05);
+}
+
+.category-card p,
+.referral-main p,
+.referral-main p,
+.referral-progress span,
+.detail-metrics span,
+.detail-badges span,
+.product-referral-heading > span,
+.product-partner-info small,
+.product-partner-rate small,
+.verification-form small,
+.detail-text,
+.request-field textarea {
+  color: #667085;
+}
+
+.category-label,
+.category-providers span,
+.detail-badges span,
+.product-pills span,
+.verification-points span {
+  background: #f1f4ef;
+  border-color: #d9e1d8;
+  color: #536174;
+}
+
+.auth-field,
+.auth-field span { color: #253044; }
+.auth-field span { font-weight: 600; }
+.auth-field input,
+.request-field textarea,
+.upload-field input {
+  border-color: #cbd5ce;
+  background: #fbfcfa;
+  color: #253044;
+  border-radius: 10px;
+}
+
+.auth-field input::placeholder,
+.request-field textarea::placeholder { color: #87909d; }
+.auth-field input:focus,
+.request-field textarea:focus { outline-color: #8eb8a0; border-color: #4b8b67; }
+.filter { background: #ffffff; color: #536174; border-color: #cbd5ce; }
+.filter.active { background: #e6eee8; color: #245b4a; border-color: #9fc2aa; }
+.metrics-row { border-color: #e2e6df; }
+.metrics-row strong,
+.card-footer strong,
+.mini-stats strong,
+.metric-stack strong { color: #253044; }
+.verified-pill { background: #e6eee8; color: #245b4a; }
+.partner-type.employee { background: #e6eee8; color: #245b4a; }
+.partner-type.user { background: #fff1df; color: #8a5a21; }
