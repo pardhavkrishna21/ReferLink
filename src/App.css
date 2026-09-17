@@ -1995,3 +1995,64 @@ body * {
   background: #f1f4ef;
   border-color: #cbd5ce;
 }
+
+/* Give each major area its own quiet background for clearer page structure. */
+.hero-section,
+.section-block {
+  border-radius: 22px;
+  padding: 34px;
+}
+
+.hero-section {
+  background: #ffffff;
+}
+
+#overview {
+  background: #edf5ef;
+}
+
+#products {
+  background: #ffffff;
+}
+
+#categories {
+  background: #f5f0e8;
+}
+
+#my-referrals {
+  background: #edf2f7;
+}
+
+#dashboard {
+  background: #f7eee7;
+}
+
+.category-page {
+  padding-bottom: 24px;
+}
+
+.category-hero {
+  background: #edf5ef;
+  border-color: #cbded0;
+}
+
+.category-products {
+  background: #ffffff;
+}
+
+.partner-section {
+  background: #edf2f7;
+}
+
+.verification-section {
+  background: #f7eee7;
+  border-top: 0;
+  border-radius: 22px;
+}
+
+@media (max-width: 640px) {
+  .hero-section,
+  .section-block {
+    padding: 24px 18px;
+  }
+}
