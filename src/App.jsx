@@ -958,6 +958,7 @@ function App() {
                   document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
+                <img className="category-image" src={category.image} alt={`${category.title} referral options`} />
                 <span className="category-label">{category.title}</span>
                 <h3>{category.title}</h3>
                 <p>{category.description}</p>

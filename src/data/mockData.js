@@ -155,6 +155,7 @@ export const categoryCollections = [
     description: 'Apply through verified cardholders and authorized employees of the issuing company.',
     providers: ['HDFC Bank', 'Axis Bank', 'ICICI Bank', 'SBI'],
     accent: 'pink',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 'education',
@@ -162,6 +163,7 @@ export const categoryCollections = [
     description: 'Referral opportunities for learning platforms and skill-building programs.',
     providers: ['Coursera', 'Udemy', 'upGrad', 'Scaler', 'Great Learning'],
     accent: 'blue',
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 'upi',
@@ -169,6 +171,7 @@ export const categoryCollections = [
     description: 'Trusted payment apps and wallets for digital transactions and onboarding.',
     providers: ['Google Pay', 'PhonePe', 'Paytm', 'BHIM'],
     accent: 'green',
+    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80',
   },
   {
     id: 'demat',
@@ -176,6 +179,7 @@ export const categoryCollections = [
     description: 'Verified investment platforms for investing and trading accounts.',
     providers: ['Zerodha', 'Upstox', 'Angel One', 'Other verified providers'],
     accent: 'purple',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80',
   },
 ]
 
