@@ -1954,3 +1954,36 @@ button {
 .verified-pill { background: #e6eee8; color: #245b4a; }
 .partner-type.employee { background: #e6eee8; color: #245b4a; }
 .partner-type.user { background: #fff1df; color: #8a5a21; }
+
+/* Use one dark ink color throughout the interface for easier reading. */
+body * {
+  color: #253044 !important;
+}
+
+.category-hero,
+.user-menu-dropdown,
+.detail-modal,
+.auth-modal,
+.product-referral-options,
+.product-partner-option,
+.selected-partner-detail,
+.selected-partner-item,
+.selected-process-box,
+.detail-features,
+.otp-box,
+.request-field textarea {
+  background: #ffffff;
+}
+
+.primary-btn,
+.brand-mark,
+.mini-avatar,
+.avatar {
+  color: #253044 !important;
+}
+
+.auth-error,
+.auth-success {
+  background: #f1f4ef;
+  border-color: #cbd5ce;
+}
