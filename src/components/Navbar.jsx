@@ -21,7 +21,7 @@ function Navbar({ currentUser, onOpenLogin, onOpenRegister, onLogout, onOpenHome
         <div className="brand-mark">R</div>
         <div>
           <button type="button" className="brand-name brand-button" onClick={onOpenHome}>ReferLink</button>
-          <div className="brand-tag">Smart referral marketplace</div>
+          <div className="brand-tag">Referrals from people you can check</div>
         </div>
       </div>
 

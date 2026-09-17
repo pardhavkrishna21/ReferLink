@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import ProductCard from './components/ProductCard'
-import { categoryCollections, filters, lifecycle, products, referralPartners, referralRecords, stats } from './data/mockData'
+import { categoryCollections, lifecycle, products, referralPartners, referralRecords, stats } from './data/mockData'
 
 const STORAGE_KEY = 'referlink_accounts'
 const SESSION_KEY = 'referlink_session'
@@ -251,7 +251,7 @@ function App() {
     })
     localStorage.setItem('referlink_employee_verifications', JSON.stringify(verifications))
     const partner = {
-      id: `submitted-employee-${Date.now()}`, category: activePage, type: 'employee', name: currentUser.name,
+      id: `submitted-employee-${verifications.length + 1}`, category: activePage, type: 'employee', name: currentUser.name,
       role: `${company.trim()} employee`, product: activeCategory?.title, rate: 'New', completed: 0, rating: 'Pending', location: 'Verified member',
       proof: 'Work email, employee ID, and payslip submitted', organization: company.trim(), workId: `Submitted · ${workId.trim()}`, payslip: 'Latest payslip submitted', accountProof: '',
       process: ['Review the product details', 'Use the submitted employee referral code', 'Complete the official provider process'], code: referralCode.trim(),
@@ -295,7 +295,7 @@ function App() {
       category: activePage, accountType, accountId, aadhaar: `••••••••${aadhaar.slice(-4)}`, phone: phone.replace(/\D/g, ''), proofName, referralCode, user: currentUser.email, status: 'Under review',
     }))
     const partner = {
-      id: `submitted-user-${Date.now()}`, category: activePage, type: 'user', name: currentUser.name,
+      id: `submitted-user-${submittedPartners.length + 1}`, category: activePage, type: 'user', name: currentUser.name,
       role: `Verified ${accountType.trim()} holder`, product: activeCategory?.title, rate: 'New', completed: 0, rating: 'Pending', location: 'Verified member',
       proof: 'Aadhaar, phone, and account ownership submitted', organization: '', workId: '', payslip: '', accountProof: 'Aadhaar, verified phone, and account proof submitted',
       process: ['Review the product details', 'Use the submitted user referral code', 'Complete the official provider process'], code: referralCode.trim(),
@@ -803,17 +803,16 @@ function App() {
       <main>
         <section className="hero-section" id="platform">
           <div className="hero-copy">
-            <span className="eyebrow">Welcome to ReferLink</span>
-            <h1>Turn trusted connections into successful referrals.</h1>
+            <span className="eyebrow">A practical referral directory</span>
+            <h1>Find a referral from someone who has actually used it.</h1>
             <p>
-              ReferLink is a verified referral marketplace for credit cards, education
-              courses, UPI payments, and investment accounts. Discover the right offer,
-              connect with a trusted referrer, and track every step in one place.
+              Compare popular products, see who is sharing the referral, and follow the
+              official provider process. ReferLink keeps the useful details in one place.
             </p>
 
             <div className="cta-row">
               <button className="primary-btn" type="button" onClick={() => openAuth('register')}>
-                Start a referral
+                Browse referrals
               </button>
               <button className="secondary-btn" type="button" onClick={() => document.getElementById('categories')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore categories
@@ -832,15 +831,15 @@ function App() {
 
           <div className="hero-panel">
             <div className="panel-top">
-              <span className="panel-badge">Best match</span>
-              <span className="panel-score">92% Match</span>
+              <span className="panel-badge">Example listing</span>
+              <span className="panel-score">Verified profile</span>
             </div>
 
             <div className="profile-box">
               <div className="mini-avatar">P</div>
               <div>
                 <h3>Priya Sharma</h3>
-                <p>Verified referrer • 21 successful referrals</p>
+                <p>Verified referrer, 21 successful referrals</p>
               </div>
             </div>
 
@@ -864,20 +863,19 @@ function App() {
               </div>
             </div>
 
-            <button className="primary-btn wide" type="button" onClick={() => openAuth('register')}>
-              Request referral
+              <button className="primary-btn wide" type="button" onClick={() => openAuth('register')}>
+              See referral options
             </button>
           </div>
         </section>
 
         <section className="section-block overview-section" id="overview">
           <div className="overview-copy">
-            <span className="eyebrow">ReferLink at a glance</span>
-            <h2>A clearer way to discover, share, and complete referrals.</h2>
+            <span className="eyebrow">How ReferLink works</span>
+            <h2>Useful information before you click apply.</h2>
             <p>
-              We bring product seekers and verified referrers together across multiple
-              categories. Every request is designed to be transparent, measurable, and
-              easier to complete.
+              Each listing shows the product, the person sharing it, and the steps they
+              followed. You decide whether the offer is right for you.
             </p>
           </div>
 

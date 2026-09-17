@@ -1718,3 +1718,119 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/* Keep the interface closer to a useful directory than a marketing dashboard. */
+.app-shell {
+  max-width: 1180px;
+  padding-top: 18px;
+}
+
+.topbar {
+  top: 12px;
+  border-color: #d9ddd5;
+  background: rgba(246, 247, 243, 0.96);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(37, 48, 68, 0.06);
+  backdrop-filter: none;
+}
+
+.brand-mark {
+  border-radius: 7px;
+  background: #245b4a;
+}
+
+.brand-name,
+.hero-copy h1,
+.category-hero h1,
+.overview-copy h2,
+.verification-copy h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.02em;
+}
+
+.brand-name { color: #253044; }
+.brand-tag { color: #667085; }
+.main-nav button,
+.main-nav a { color: #536174; }
+.main-nav button:hover,
+.main-nav a:hover { background: #e6eee8; color: #245b4a; transform: none; }
+
+.primary-btn {
+  background: #245b4a;
+  box-shadow: none;
+  border-radius: 6px;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.filter:hover,
+.mode-btn:hover { transform: none; }
+
+.secondary-btn,
+.filter,
+.mode-btn {
+  border-radius: 6px;
+}
+
+.secondary-btn { background: #ffffff; color: #245b4a; border-color: #cbd5ce; }
+.eyebrow {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #245b4a;
+  padding: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero-section { padding-top: 72px; }
+.hero-copy h1 { color: #253044; max-width: 650px; }
+.hero-copy p,
+.overview-copy p,
+.section-description { color: #667085; }
+.hero-panel,
+.product-card,
+.referrer-card,
+.dashboard-card,
+.overview-metric,
+.stat-box,
+.connection-card,
+.partner-card,
+.verification-form {
+  background: #ffffff;
+  border-color: #d9ddd5;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(37, 48, 68, 0.05);
+}
+
+.stat-box strong,
+.overview-metric strong,
+.profile-box h3,
+.product-card h3,
+.referrer-card h3,
+.dashboard-card h3,
+.product-summary h4,
+.partner-card h3,
+.verification-form h3 { color: #253044; }
+
+.stat-box span,
+.overview-metric span,
+.overview-metric small,
+.profile-box p,
+.provider,
+.referrer-card p { color: #667085; }
+
+.profile-box,
+.partner-stats div { background: #f6f7f3; border-color: #e2e6df; }
+.mini-avatar,
+.avatar { background: #245b4a; border-radius: 8px; }
+.panel-badge { background: #e6eee8; border-color: #c7ddd0; color: #245b4a; }
+.panel-score { color: #536174; }
+.score-list div { color: #536174; border-color: #e2e6df; }
+.score-list strong { color: #245b4a; }
+.metric-progress span { background: #4b8b67; }
+.product-tag,
+.verified-pill { border-radius: 4px; }
+.product-card:hover,
+.referrer-card:hover { transform: translateY(-2px); }
